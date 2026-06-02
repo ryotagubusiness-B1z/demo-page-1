@@ -58,9 +58,3 @@ document.querySelectorAll(".faq-item").forEach((item) => {
     });
   });
 });
-
-window.addEventListener("load", () => {
-  if (window.lucide) {
-    window.lucide.createIcons();
-  }
-});
