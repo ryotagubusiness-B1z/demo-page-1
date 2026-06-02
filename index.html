@@ -15,28 +15,45 @@
       content="マッサージでは戻ってしまう不調へ。原因分析、姿勢検査、再発予防まで行う完全予約制の整体院。"
     />
     <meta property="og:type" content="website" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              navy: "#14233f",
-              gold: "#b98a32",
-              sage: "#658660",
-              porcelain: "#fbfcfd"
-            },
-            fontFamily: {
-              mincho: ["Shippori Mincho B1", "serif"]
-            }
-          }
-        }
-      };
-    </script>
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314233f'/%3E%3Ctext x='16' y='23' font-family='serif' font-weight='700' font-size='19' fill='%23b98a32' text-anchor='middle'%3E%E5%87%9B%3C/text%3E%3C/svg%3E"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+    >
+      <defs>
+        <symbol id="lc-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+        <symbol id="lc-phone-call" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+        <symbol id="lc-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></symbol>
+        <symbol id="lc-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+        <symbol id="lc-calendar-days" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></symbol>
+        <symbol id="lc-calendar-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 14V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M3 10h18"/><path d="m16 18 2 2 4-4"/></symbol>
+        <symbol id="lc-calendar-check-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 14V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M3 10h18"/><path d="m16 18 2 2 4-4"/></symbol>
+        <symbol id="lc-badge-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></symbol>
+        <symbol id="lc-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+        <symbol id="lc-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></symbol>
+        <symbol id="lc-person-standing" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1"/><path d="m9 20 3-6 3 6"/><path d="m6 8 6 2 6-2"/><path d="M12 10v4"/></symbol>
+        <symbol id="lc-ruler" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="6" rx="1"/><path d="M7 9v2"/><path d="M11 9v3"/><path d="M15 9v2"/><path d="M19 9v3"/></symbol>
+        <symbol id="lc-waves" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 1.3 0 1.9-.5 2.5-1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 1.3 0 1.9-.5 2.5-1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 1.3 0 1.9-.5 2.5-1"/></symbol>
+        <symbol id="lc-shield-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+        <symbol id="lc-clock-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/></symbol>
+        <symbol id="lc-sliders-horizontal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="4" x2="14" y2="4"/><line x1="10" y1="4" x2="3" y2="4"/><line x1="21" y1="12" x2="12" y2="12"/><line x1="8" y1="12" x2="3" y2="12"/><line x1="21" y1="20" x2="16" y2="20"/><line x1="12" y1="20" x2="3" y2="20"/><line x1="14" y1="2" x2="14" y2="6"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="16" y1="18" x2="16" y2="22"/></symbol>
+        <symbol id="lc-repeat-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 3-3 3 3"/><path d="M13 18H7a2 2 0 0 1-2-2V6"/><path d="m22 15-3 3-3-3"/><path d="M11 6h6a2 2 0 0 1 2 2v10"/></symbol>
+        <symbol id="lc-message-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+        <symbol id="lc-message-circle-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M15.8 9.2a2.5 2.5 0 0 0-3.5 0l-.3.4-.35-.3a2.42 2.42 0 1 0-3.2 3.6l3.6 3.5 3.6-3.5c1.1-1.1 1-2.7.15-3.7Z"/></symbol>
+        <symbol id="lc-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+        <symbol id="lc-baby" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/></symbol>
+        <symbol id="lc-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+        <symbol id="lc-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+      </defs>
+    </svg>
+
     <a class="skip-link" href="#main">本文へ移動</a>
 
     <header class="site-header" data-header>
@@ -56,11 +73,11 @@
           <a href="#access">アクセス</a>
         </nav>
         <a class="header-tel" href="tel:0000000000" aria-label="電話予約 00-0000-0000">
-          <i data-lucide="phone"></i>
+          <svg class="lucide" aria-hidden="true"><use href="#lc-phone"></use></svg>
           <span>00-0000-0000</span>
         </a>
         <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" data-menu-toggle>
-          <i data-lucide="menu"></i>
+          <svg class="lucide" aria-hidden="true"><use href="#lc-menu"></use></svg>
         </button>
       </div>
       <nav class="mobile-nav" aria-label="スマートフォンメニュー" data-mobile-nav>
@@ -87,11 +104,11 @@
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#reservation">
-                <i data-lucide="calendar-check"></i>
+                <svg class="lucide" aria-hidden="true"><use href="#lc-calendar-check"></use></svg>
                 初回予約をする
               </a>
               <a class="btn btn-ghost" href="tel:0000000000">
-                <i data-lucide="phone-call"></i>
+                <svg class="lucide" aria-hidden="true"><use href="#lc-phone-call"></use></svg>
                 電話で相談
               </a>
             </div>
@@ -139,32 +156,32 @@
           </div>
           <div class="worry-grid">
             <article class="worry-card reveal">
-              <i data-lucide="badge-alert"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-badge-alert"></use></svg>
               <h3>肩こり</h3>
               <p>首から肩が重く、夕方になると集中力が落ちる。</p>
             </article>
             <article class="worry-card reveal">
-              <i data-lucide="activity"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-activity"></use></svg>
               <h3>腰痛</h3>
               <p>座りっぱなしや立ち上がりで腰に不安がある。</p>
             </article>
             <article class="worry-card reveal">
-              <i data-lucide="brain"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-brain"></use></svg>
               <h3>頭痛</h3>
               <p>首こりや眼精疲労と一緒に頭が重くなる。</p>
             </article>
             <article class="worry-card reveal">
-              <i data-lucide="person-standing"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-person-standing"></use></svg>
               <h3>猫背</h3>
               <p>写真で見ると背中が丸く、呼吸も浅く感じる。</p>
             </article>
             <article class="worry-card reveal">
-              <i data-lucide="ruler"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-ruler"></use></svg>
               <h3>姿勢の悪さ</h3>
               <p>骨盤や肩の高さが左右で違い、疲れやすい。</p>
             </article>
             <article class="worry-card reveal">
-              <i data-lucide="waves"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-waves"></use></svg>
               <h3>自律神経の乱れ</h3>
               <p>眠りが浅い、緊張が抜けない、休んでも疲れる。</p>
             </article>
@@ -211,31 +228,31 @@
           <div class="reason-grid">
             <article class="reason-card reveal">
               <span>01</span>
-              <i data-lucide="shield-check"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-shield-check"></use></svg>
               <h3>国家資格保有</h3>
               <p>身体の構造を理解した施術者が、検査から施術計画まで担当します。</p>
             </article>
             <article class="reason-card reveal">
               <span>02</span>
-              <i data-lucide="clock-3"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-clock-3"></use></svg>
               <h3>完全予約制</h3>
               <p>待ち時間を抑え、落ち着いた空間で相談と施術に集中できます。</p>
             </article>
             <article class="reason-card reveal">
               <span>03</span>
-              <i data-lucide="sliders-horizontal"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-sliders-horizontal"></use></svg>
               <h3>オーダーメイド施術</h3>
               <p>年齢、仕事、姿勢、既往歴を踏まえ、その日の状態に合わせます。</p>
             </article>
             <article class="reason-card reveal">
               <span>04</span>
-              <i data-lucide="repeat-2"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-repeat-2"></use></svg>
               <h3>再発予防</h3>
               <p>その場の変化だけでなく、戻りにくい身体づくりまで伴走します。</p>
             </article>
             <article class="reason-card reveal">
               <span>05</span>
-              <i data-lucide="message-circle-heart"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-message-circle-heart"></use></svg>
               <h3>アフターサポート</h3>
               <p>セルフケアや仕事中の姿勢など、日常で続けやすい方法を共有します。</p>
             </article>
@@ -249,10 +266,10 @@
           <p class="script-label">Comfortable care</p>
           <h2>落ち着いた個室空間で、周りを気にせず相談できます。</h2>
           <ul>
-            <li><i data-lucide="calendar-days"></i>完全予約制</li>
-            <li><i data-lucide="car"></i>駐車場あり</li>
-            <li><i data-lucide="baby"></i>お子様連れ相談可</li>
-            <li><i data-lucide="moon"></i>平日20時まで</li>
+            <li><svg class="lucide" aria-hidden="true"><use href="#lc-calendar-days"></use></svg>完全予約制</li>
+            <li><svg class="lucide" aria-hidden="true"><use href="#lc-car"></use></svg>駐車場あり</li>
+            <li><svg class="lucide" aria-hidden="true"><use href="#lc-baby"></use></svg>お子様連れ相談可</li>
+            <li><svg class="lucide" aria-hidden="true"><use href="#lc-moon"></use></svg>平日20時まで</li>
           </ul>
         </div>
       </section>
@@ -403,7 +420,7 @@
               <small>税込・初回限定</small>
             </div>
             <a class="btn btn-primary" href="#reservation">
-              <i data-lucide="calendar-check-2"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-calendar-check-2"></use></svg>
               空き状況を確認する
             </a>
           </div>
@@ -475,7 +492,7 @@
           <div class="map-card reveal" role="img" aria-label="凛整体院周辺地図のプレースホルダー">
             <div class="map-grid"></div>
             <div class="map-pin">
-              <i data-lucide="map-pin"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-map-pin"></use></svg>
               凛整体院
             </div>
           </div>
@@ -491,17 +508,17 @@
           </p>
           <div class="reserve-actions" aria-label="予約方法">
             <a class="reserve-card" href="tel:0000000000">
-              <i data-lucide="phone"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-phone"></use></svg>
               <span>電話予約</span>
               <strong>00-0000-0000</strong>
             </a>
             <a class="reserve-card line" href="#" aria-label="LINE予約">
-              <i data-lucide="message-circle"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-message-circle"></use></svg>
               <span>LINE予約</span>
               <strong>空き時間を相談</strong>
             </a>
             <a class="reserve-card web" href="#" aria-label="Web予約">
-              <i data-lucide="calendar"></i>
+              <svg class="lucide" aria-hidden="true"><use href="#lc-calendar"></use></svg>
               <span>Web予約</span>
               <strong>24時間受付中</strong>
             </a>
@@ -525,8 +542,8 @@
     </footer>
 
     <div class="mobile-sticky-cta" aria-label="固定予約ボタン">
-      <a href="tel:0000000000"><i data-lucide="phone"></i>電話</a>
-      <a href="#reservation"><i data-lucide="calendar-check"></i>予約</a>
+      <a href="tel:0000000000"><svg class="lucide" aria-hidden="true"><use href="#lc-phone"></use></svg>電話</a>
+      <a href="#reservation"><svg class="lucide" aria-hidden="true"><use href="#lc-calendar-check"></use></svg>予約</a>
     </div>
 
     <script src="./script.js"></script>
