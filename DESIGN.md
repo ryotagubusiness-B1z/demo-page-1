@@ -1,23 +1,25 @@
 # Design
 
 ## Direction
-整体院の新規集客LP。高価格帯のデンタル/自費診療クリニックに近い静かな上質さを狙う。温かみのあるオフホワイトを基調に、彩度を抑えたネイビーで専門性、控えめなブラス（くすんだ金）を線・小見出しのアクセントに限定する。装飾は薄い罫線と余白で構成し、影・グラデーション・ガラス効果は最小限。添付写真を主役にする。チラシ風の煽り、過剰な発光グラデ、筆記体ラベルなどの「テンプレ感・AI感」を避ける。
+整体院の新規集客LP。名古屋の歯科ブランド「RYO JIMBO DENTAL」系のような、明るく清潔でモダンなクリニックの雰囲気を目指す。白基調の広い余白に、フレッシュなティール（青緑）をブランドカラーとして用い、温かみのあるサンド系ニュートラルで柔らかさを添える。角丸を大きく取った丸みのあるカード、やわらかいシャドウ、ピル型のCTAで、清潔感・親しみ・信頼感を両立する。写真を主役にし、見出しはゴシック体の太字でモダンに。
 
 ## Palette
-Paper: oklch(98.6% 0.004 85)  /* 温かいオフホワイト */
-Surface: oklch(96.4% 0.006 85)
-Ink: oklch(27% 0.018 255)
-Muted: oklch(49% 0.02 255)
-Navy: oklch(34% 0.04 255)
-Navy Deep: oklch(24% 0.04 255)
-Accent (Brass): oklch(60% 0.05 72)  /* 彩度を落とした金 */
-Sage: oklch(56% 0.045 150)
-Line: oklch(89% 0.008 85)
+BG: oklch(99.2% 0.003 200)        /* 明るい白 */
+Surface: oklch(97.3% 0.011 195)   /* 涼やかなサーフェス */
+Surface Warm: oklch(96.8% 0.016 75) /* 温かいサンド */
+Brand (Teal): oklch(61% 0.092 192)
+Brand Deep: oklch(50% 0.09 198)
+Brand Night: oklch(34% 0.058 214) /* 濃色セクション用ティール寄りネイビー */
+Brand Soft: oklch(95% 0.035 190)  /* 淡いティールのタイント */
+Accent (Warm): oklch(74% 0.11 62)
+Ink: oklch(28% 0.025 235)
+Muted: oklch(50% 0.022 235)
+Line: oklch(91% 0.012 200)
 
 ## Typography
-Shippori Mincho B1 is the single typeface, used for Japanese body and headings to preserve trust and calm authority. Headings use weight 700 with generous letter-spacing (0.04em) and tall line-height for an airy, premium rhythm.
-English captions are set as small uppercase Latin labels with wide tracking (no cursive/display fonts), keeping them quiet and editorial rather than decorative.
-The brand monogram is a plain serif glyph inside a thin ring, so it does not compete with Japanese text.
+Noto Sans JP is the primary typeface for Japanese body and headings — a clean modern gothic that reads bright and approachable. Headings use weight 900 for a confident, contemporary presence; body uses 400 with tall line-height.
+Jost (geometric sans) is used for small English captions, numbers, and the monogram, giving a crisp modern accent without competing with the Japanese text.
+The brand monogram is a rounded teal-gradient tile.
 
 ## Components
 Sticky header with primary reservation CTA.
